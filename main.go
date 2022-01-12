@@ -45,10 +45,6 @@ func createStorageFile(name string) {
 		checkError(err, "failed on creating storage dir.")
 	}
 
-	//f, err := os.Create("storage/vault.json")
-	//fcheckError(err, "Error creating the vault file.")
-	//defer f.Close()
-
 	reader := bufio.NewReader(os.Stdin)
 
 	fmt.Printf("Insert a new user: ")
